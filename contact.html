@@ -77,66 +77,78 @@
           </div>
 
           <!-- Contact Form Column -->
-          <div class="col-lg-6">
-            <div class="contact-form-wrapper">
-              <h2>Get In Touch</h2>
-              <p class="mb-4">Have a question? We'd love to hear from you.</p>
+<!-- Contact Form Column -->
+<div class="col-lg-6">
+  <div class="contact-form-wrapper">
+    <h2>Get In Touch</h2>
+    <p class="mb-4">Have a question? We'd love to hear from you.</p>
 
-              <form id="contactForm" class="needs-validation" action="https://formsubmit.co/luminarypeertutoring@gmail.com" method="POST">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="firstName">First Name*</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="firstName"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="lastName">Last Name*</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lastName"
-                      required
-                    />
-                  </div>
-                </div>
+    <form action="https://formsubmit.co/luminarypeertutoring@gmail.com" method="POST">
+      <!-- Optional: Honeypot to prevent spam -->
+      <input type="text" name="_honey" style="display:none">
+      
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+      
+      <!-- Specify redirect after submission -->
+      <input type="hidden" name="_next" value="https://luminarypeertutoring.com/thank-you.html">
 
-                <div class="mb-3">
-                  <label for="email">Email*</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" class="form-control" id="phone" />
-                </div>
-
-                <div class="mb-4">
-                  <label for="message">Message*</label>
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="4"
-                    required
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">First Name*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            name="First Name"
+            required
+          />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Last Name*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            name="Last Name"
+            required
+          />
         </div>
       </div>
+
+      <div class="mb-3">
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="Email"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="phone">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="Phone" />
+      </div>
+
+      <div class="mb-4">
+        <label for="message">Message*</label>
+        <textarea
+          class="form-control"
+          id="message"
+          name="Message"
+          rows="4"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
     </section>
     <footer class="footer">
       <div class="container">
